@@ -43,9 +43,9 @@ internal static class Program
     {
         for (var i = 0; i < args.Length - 1; i++)
         {
-            if (string.Equals(args[i], "/p", StringComparison.OrdinalIgnoreCase) && int.TryParse(args[i + 1], out var hwnd))
+            if (string.Equals(args[i], "/p", StringComparison.OrdinalIgnoreCase) && int.TryParse(args[i + 1], out var handle))
             {
-                return new IntPtr(hwnd);
+                return new IntPtr(handle);
             }
         }
 
